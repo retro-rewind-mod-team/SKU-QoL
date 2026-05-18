@@ -1,6 +1,6 @@
 -- ============================================================
 --  Retro Rewind - SKU QoL
---  Version: 1.0
+--  Version: 1.2
 --
 --  Automatically uses the last picked-up cassette's SKU
 --  wherever you need to enter it — no typing required.
@@ -25,13 +25,7 @@
 --  2b. Open a poster's SKU  → SKU is applied automatically
 -- ============================================================
 
--- ============================================================
--- CONFIG
--- ============================================================
-local Config = {
-    Debug        = false,  -- true = log hook registrations and detailed errors
-    HookDelayMs  = 3000,
-}
+local Config = require("config")
 
 -- ============================================================
 -- INTERNAL STATE

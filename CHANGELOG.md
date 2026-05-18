@@ -2,6 +2,10 @@
 
 ## SKU QoL
 
+### 1.2
+- Extracted inline `Config` block into a separate `config.lua` for RRMM support
+- Added `SKU-QoL.yaml` with full config definition for RRMM
+
 ### 1.1
 - `safe()` — now supports variadics and multiple return values, consistent with Economy QoL and Promotion QoL
 - PickUp-Hook — added `cart:IsValid()` check before accessing the product structure; prevents errors when a cassette is invalidated by GC immediately after pickup

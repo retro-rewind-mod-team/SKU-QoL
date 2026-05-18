@@ -1,0 +1,24 @@
+# ── Required Fields ───────────────────────────────────────────────────────────
+
+name: "SKU QoL"
+author: "Xerduntis"
+version: "1.2"
+mod_type: lua
+
+# ── Optional Fields ───────────────────────────────────────────────────────────
+
+description: "Automatically uses the last picked-up cassette's SKU wherever you need to enter it. Triggers the Black Market search when sitting at the computer, and sets the SKU on any poster frame — no typing required."
+
+# Nexus Mods IDs — used for update checking.
+
+config:
+  - key: Debug
+    label: "Debug Mode"
+    type: bool
+    default: false
+
+  - key: HookDelayMs
+    label: "Hook Delay (ms)"
+    description: "Milliseconds to wait after load before registering hooks. Increase if hooks fail on slower systems."
+    type: int
+    default: 3000
